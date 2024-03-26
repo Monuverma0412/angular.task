@@ -1,0 +1,19 @@
+<div id="main">
+    <div>
+        <label>First Name:</label>
+        <input #First type="text" placeholder="First Name" id="First">
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input #Second type="text" placeholder="Last Name" id="Last">
+    </div>
+    <div>
+        <label>DOB:</label>
+        <input #Third type="date" placeholder="DOB" id="DOB">
+    </div>
+    <div>
+        <label>Gmail:</label>
+        <input #Fourth type="text" placeholder="Gmail" id="Gmail">
+    </div>
+    <button (click)="login(First.value, Second.value, Third.value, Fourth.value)">Submit</button>
+</div>

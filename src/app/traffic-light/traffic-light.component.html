@@ -1,0 +1,23 @@
+<div class="traffic-light" style="background-color: black;">
+  <div class="lightState" [class.green]="lightState>=0&&lightState<=4"></div>
+  <div class="lightState" [class.yellow]="lightState>4&&lightState<=6"></div>
+  <div class="lightState" [class.red]="lightState>6||lightState<0"></div>
+</div>
+
+<div class="traffic-light" style="background-color: black;">
+  <div class="lightState" [class.green]="lightState>6&&lightState<9"></div>
+  <div class="lightState" [class.yellow]="lightState>=9&&lightState<11"></div>
+  <div class="lightState" [class.red]="lightState>=11||lightState<=6"></div>
+</div>
+
+<div class="traffic-light" style="background-color: black;">
+  <div class="lightState" [class.green]="lightState>10&&lightState<14"></div>
+  <div class="lightState" [class.yellow]="lightState>=14&&lightState<16"></div>
+  <div class="lightState" [class.red]="lightState>=16||lightState<=10"></div>
+</div>
+
+<div class="traffic-light" style="background-color: black;">
+  <div class="lightState" [class.green]="lightState>15&&lightState<=19"></div>
+  <div class="lightState" [class.yellow]="lightState>19&&lightState<=21"></div>
+  <div class="lightState" [class.red]="lightState>21||lightState<=15"></div>
+</div>
